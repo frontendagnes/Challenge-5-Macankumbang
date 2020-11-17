@@ -121,14 +121,10 @@ html{
         margin-bottom: 95px;
     }
 }
-.work{
 
-
-}
 .information{
-    
-    // background-image: url('img/grid.jpg');
     background-color: #7b7b7b;
+    // background-image: url('img/grid.webp');
     padding-top: 180px;
     padding-bottom: 150px;
     text-align: center;
@@ -139,5 +135,109 @@ html{
     }
     &__description{
         font-size: 24px;
+    }
+}
+.portofolio{
+    padding-top: 82px;
+    &__group{
+        text-align: center;
+        color: #323232;
+    }
+    &__title{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    &__description{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+}
+.breadcrumbs{
+    padding-top: 82px;
+    padding-bottom: 40px;
+    color: #323232;
+    font-size: 18px;
+    cursor: pointer;
+    
+    &__active{
+        color: #323232;
+        transition: all .75s;
+        &:hover{
+            color: #A7A7A7;
+        }
+    }
+    &__noActive{
+        color: #A7A7A7;
+        transition: all .75s;
+        &:hover{
+            color: #323232;
+        }
+    }
+}
+
+.flexbox-img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+&__item{
+    width: 369px;
+    height: 290px;
+    transition: all 1s;
+    margin-bottom: 38px;
+}
+.item-1{
+    background: url('img/thumb.png');
+    cursor: pointer;
+    &:hover{
+        background: #506082;
+    }
+}
+.item-2{
+    background: url('img/thumb-1.png');
+    cursor: pointer;
+    &:hover{
+        background: #506082;
+    }
+}
+.item-3{
+    background: url('img/thumb-2.png');
+    cursor: pointer;
+    &:hover{
+        background: #506082;
+    }
+}
+.item-4{
+    background: url('img/thumb-3.png');
+    cursor: pointer;
+    &:hover{
+        background: #506082;
+    }
+}
+.item-5{
+    background: url('img/thumb-5.png');
+    cursor: pointer;
+    &:hover{
+        background: #506082;
+    }
+}
+.item-6{
+    background: url('img/thumb-5.png');
+    cursor: pointer;
+    &:hover{
+        background: #506082;
+    }
+}
+
+}
+.arrow-module{
+    text-align: center;
+    padding-top: 61px;
+    font-size: 18px;
+    color: #323232;
+    &__text{
+        padding-bottom: 10px;
+    }
+    &__arrow{
+        
     }
 }

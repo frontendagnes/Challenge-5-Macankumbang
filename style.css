@@ -156,3 +156,126 @@ html {
 .information__description {
   font-size: 24px;
 }
+
+.portofolio {
+  padding-top: 82px;
+}
+
+.portofolio__group {
+  text-align: center;
+  color: #323232;
+}
+
+.portofolio__title {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.portofolio__description {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.breadcrumbs {
+  padding-top: 82px;
+  padding-bottom: 40px;
+  color: #323232;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.breadcrumbs__active {
+  color: #323232;
+  transition: all .75s;
+}
+
+.breadcrumbs__active:hover {
+  color: #A7A7A7;
+}
+
+.breadcrumbs__noActive {
+  color: #A7A7A7;
+  transition: all .75s;
+}
+
+.breadcrumbs__noActive:hover {
+  color: #323232;
+}
+
+.flexbox-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flexbox-img__item {
+  width: 369px;
+  height: 290px;
+  transition: all 1s;
+  margin-bottom: 38px;
+}
+
+.flexbox-img .item-1 {
+  background: url("img/thumb.png");
+  cursor: pointer;
+}
+
+.flexbox-img .item-1:hover {
+  background: #506082;
+}
+
+.flexbox-img .item-2 {
+  background: url("img/thumb-1.png");
+  cursor: pointer;
+}
+
+.flexbox-img .item-2:hover {
+  background: #506082;
+}
+
+.flexbox-img .item-3 {
+  background: url("img/thumb-2.png");
+  cursor: pointer;
+}
+
+.flexbox-img .item-3:hover {
+  background: #506082;
+}
+
+.flexbox-img .item-4 {
+  background: url("img/thumb-3.png");
+  cursor: pointer;
+}
+
+.flexbox-img .item-4:hover {
+  background: #506082;
+}
+
+.flexbox-img .item-5 {
+  background: url("img/thumb-5.png");
+  cursor: pointer;
+}
+
+.flexbox-img .item-5:hover {
+  background: #506082;
+}
+
+.flexbox-img .item-6 {
+  background: url("img/thumb-5.png");
+  cursor: pointer;
+}
+
+.flexbox-img .item-6:hover {
+  background: #506082;
+}
+
+.arrow-module {
+  text-align: center;
+  padding-top: 61px;
+  font-size: 18px;
+  color: #323232;
+}
+
+.arrow-module__text {
+  padding-bottom: 10px;
+}
