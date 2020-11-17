@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Tahoma, sans-serif;
 }
 
 .title {
@@ -20,6 +20,12 @@ html {
   border: transparent;
   font-size: 18px;
   border-radius: 4px;
+  cursor: pointer;
+  transition: all .75s;
+}
+
+.btn:hover {
+  background-color: #ff0000;
 }
 
 .menu {
@@ -82,4 +88,71 @@ html {
   margin-right: 91px;
   margin-top: 34px;
   margin-bottom: 44px;
+}
+
+.services {
+  background-color: #475a85;
+  color: #ffffff;
+  padding-top: 69px;
+  padding-bottom: 95px;
+}
+
+.services-group {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.services-group__title {
+  font-size: 30px;
+  padding-bottom: 4px;
+}
+
+.services-group__description {
+  padding-bottom: 14px;
+}
+
+.flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flexbox__item {
+  max-width: 221px;
+  margin: 0 auto;
+  margin-right: 77.7px;
+  text-align: center;
+}
+
+.flexbox__title {
+  padding-bottom: 9.5px;
+  font-size: 18px;
+}
+
+.flexbox__description {
+  height: 53.67px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.flexbox__btn {
+  margin-top: 27.7px;
+  margin-bottom: 95px;
+}
+
+.information {
+  background-color: #7b7b7b;
+  padding-top: 180px;
+  padding-bottom: 150px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.information__title {
+  font-size: 48px;
+  padding-bottom: 15px;
+}
+
+.information__description {
+  font-size: 24px;
 }

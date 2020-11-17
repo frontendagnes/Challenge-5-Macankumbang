@@ -4,7 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', Tahoma, sans-serif;
 }
 .title{
     font-weight: bold;
@@ -17,6 +17,11 @@ html{
     border: transparent;
     font-size: 18px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: all .75s;
+    &:hover{
+        background-color: #ff0000;
+    }
 }
 .menu{
     display: flex;
@@ -72,4 +77,67 @@ html{
         margin-bottom: 44px;
     }
 
+}
+.services{
+    background-color: #475a85;
+    color: #ffffff;
+    padding-top: 69px;
+    padding-bottom: 95px;
+}
+.services-group{
+    text-align: center;
+    padding-bottom: 150px;
+    &__title{
+        font-size: 30px;
+        padding-bottom: 4px;
+    }
+    &__description{
+        padding-bottom: 14px;
+    }
+}
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+   
+    &__item{
+        max-width: 221px;
+        margin: 0 auto;
+        margin-right: 77.7px;
+        text-align: center;
+    }
+    &__title{
+        padding-bottom: 9.5px;
+        font-size: 18px;
+    }
+    &__description{
+        height: 53.67px;
+        overflow: hidden;
+        font-size: 14px;
+        
+    }
+    &__btn{
+        margin-top: 27.7px;
+        margin-bottom: 95px;
+    }
+}
+.work{
+
+
+}
+.information{
+    
+    // background-image: url('img/grid.jpg');
+    background-color: #7b7b7b;
+    padding-top: 180px;
+    padding-bottom: 150px;
+    text-align: center;
+    color: #ffffff;
+    &__title{
+        font-size: 48px;
+        padding-bottom: 15px;
+    }
+    &__description{
+        font-size: 24px;
+    }
 }
