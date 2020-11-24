@@ -13,6 +13,11 @@ html {
   font-weight: bold;
 }
 
+.height100 {
+  height: 100%;
+  padding: 10px;
+}
+
 .btn {
   background-color: #EA5B58;
   color: #ffffff;
@@ -97,7 +102,7 @@ html {
   height: 348px;
   border-radius: 10px;
   background-color: #f5f5f5;
-  box-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5, 2px 2px 2px rgba(101, 104, 113, 0);
+  box-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 
 .services {
@@ -227,62 +232,67 @@ html {
 .flexbox-img__item {
   width: 369px;
   height: 290px;
-  transition: all 1s;
   margin-bottom: 38px;
+  cursor: pointer;
+}
+
+.flexbox-img__noActive {
+  display: none;
+}
+
+.flexbox-img__descritpion {
+  background-color: #506082;
+  color: #ffffff;
+  height: 100%;
+  padding-top: 67px;
+  padding-bottom: 84px;
+  padding-left: 49.5px;
+  padding-right: 46.6px;
+  text-align: center;
+}
+
+.flexbox-img__descritpion p {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 16.5px;
+}
+
+.flexbox-img__descritpion div {
+  font-size: 14px;
+  width: 272px;
+  height: 78px;
+  overflow: hidden;
+}
+
+.flexbox-img__descritpion i {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  margin-top: 25px;
 }
 
 .flexbox-img .item-1 {
   background: url("img/thumb.png");
-  cursor: pointer;
-}
-
-.flexbox-img .item-1:hover {
-  background: #506082;
 }
 
 .flexbox-img .item-2 {
   background: url("img/thumb-1.png");
-  cursor: pointer;
-}
-
-.flexbox-img .item-2:hover {
-  background: #506082;
 }
 
 .flexbox-img .item-3 {
   background: url("img/thumb-2.png");
-  cursor: pointer;
-}
-
-.flexbox-img .item-3:hover {
-  background: #506082;
 }
 
 .flexbox-img .item-4 {
   background: url("img/thumb-3.png");
-  cursor: pointer;
-}
-
-.flexbox-img .item-4:hover {
-  background: #506082;
 }
 
 .flexbox-img .item-5 {
   background: url("img/thumb-5.png");
-  cursor: pointer;
-}
-
-.flexbox-img .item-5:hover {
-  background: #506082;
 }
 
 .flexbox-img .item-6 {
   background: url("img/thumb-5.png");
-  cursor: pointer;
-}
-
-.flexbox-img .item-6:hover {
-  background: #506082;
 }
 
 .arrow-module {
