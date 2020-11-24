@@ -73,6 +73,7 @@ html {
   padding-top: 107px;
   padding-bottom: 64px;
   padding-left: 113px;
+  padding-right: 127px;
 }
 
 .head__title {
@@ -91,6 +92,14 @@ html {
   margin-bottom: 44px;
 }
 
+.head__squere {
+  width: 464px;
+  height: 348px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5, 2px 2px 2px rgba(101, 104, 113, 0);
+}
+
 .services {
   background-color: #475a85;
   color: #ffffff;
@@ -100,7 +109,7 @@ html {
 
 .services-group {
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 72px;
 }
 
 .services-group__title {
@@ -125,6 +134,11 @@ html {
   text-align: center;
 }
 
+.flexbox__item i {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
 .flexbox__title {
   padding-bottom: 9.5px;
   font-size: 18px;
@@ -143,6 +157,7 @@ html {
 
 .information {
   background-color: #7b7b7b;
+  background-repeat: repeat-x;
   padding-top: 180px;
   padding-bottom: 150px;
   text-align: center;
@@ -310,6 +325,9 @@ html {
 
 .slider {
   border: 2px solid black;
+  max-width: 1143px;
+  height: 512px;
+  margin: 91px auto;
 }
 
 .contact {
@@ -350,6 +368,23 @@ html {
   width: 60%;
 }
 
+.contact__icon {
+  width: 50%;
+  margin-top: 56px;
+  font-size: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__icon i {
+  transition: all .75s;
+  cursor: pointer;
+}
+
+.contact__icon i:hover {
+  color: #c1bfc2;
+}
+
 .adress__title {
   margin-bottom: 20px;
 }
@@ -361,7 +396,11 @@ adress {
 
 adress div {
   padding-top: 29px;
-  padding-left: 34px;
+}
+
+adress i {
+  margin-right: 10px;
+  color: #c0c0c0;
 }
 
 form::placeholder {
@@ -406,4 +445,10 @@ textarea {
 
 .foot p {
   margin-bottom: 25px;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 38px;
+  right: 33px;
 }
