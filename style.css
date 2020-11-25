@@ -14,8 +14,7 @@ html {
 }
 
 .height100 {
-  height: 100%;
-  padding: 10px;
+  overflow: auto !important;
 }
 
 .btn {
@@ -227,6 +226,7 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  transition: all .75s;
 }
 
 .flexbox-img__item {
@@ -266,9 +266,14 @@ html {
 
 .flexbox-img__descritpion i {
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 36px;
   margin-top: 25px;
+  transition: all .75s;
+}
+
+.flexbox-img__descritpion i:hover {
+  color: #323232;
 }
 
 .flexbox-img .item-1 {

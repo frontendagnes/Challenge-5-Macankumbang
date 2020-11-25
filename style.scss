@@ -13,8 +13,7 @@ html {
     font-weight: bold;
 }
 .height100{
-    height: 100%;
-    padding: 10px;
+    overflow: auto !important;
 }
 .btn {
     background-color: #EA5B58;
@@ -228,6 +227,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    transition: all .75s;
     &__item {
         width: 369px;
         height: 290px;
@@ -260,9 +260,13 @@ html {
         }
         i{
             text-align: center;
-            color: white;
+            color: #ffffff;
             font-size: 36px;
             margin-top: 25px;
+            transition: all .75s;
+            &:hover{
+                color: #323232;
+            }
         }
     
     }
