@@ -33,6 +33,11 @@ html {
   background-color: #ff0000;
 }
 
+.menuUp {
+  height: 99px;
+  background-color: #0d0b11;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -40,6 +45,15 @@ html {
   padding-top: 31px;
   padding-bottom: 30px;
   background-color: #0d0b11;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.menu__sticky {
+  transition: all .75s;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .menu__logo {
@@ -240,7 +254,17 @@ html {
 }
 
 .flexbox-img__noActive {
-  display: none;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 50% 0;
+  transition-duration: .75s;
+}
+
+.flexbox-img__active {
+  visibility: visible;
+  transform: scaleX(1);
+  transform-origin: 50% 0;
+  transition-duration: .75s;
 }
 
 .flexbox-img__descritpion {
@@ -332,6 +356,10 @@ html {
   transform: translateY(20px);
 }
 
+.arrow-module i {
+  margin-bottom: 90px;
+}
+
 @keyframes moveArrow {
   0% {
     transform: translateY(0px);
@@ -387,6 +415,13 @@ html {
   width: 746px;
   font-style: italic;
   line-height: 1.5;
+}
+
+.slider__opinion i {
+  position: absolute;
+  font-size: 30px;
+  margin-left: -38px;
+  margin-top: -10px;
 }
 
 .slider__costumer {
@@ -522,4 +557,5 @@ textarea {
   position: fixed;
   bottom: 38px;
   right: 33px;
+  display: none;
 }

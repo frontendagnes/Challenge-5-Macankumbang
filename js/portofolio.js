@@ -4,11 +4,13 @@ function leftRightSide() {
 
     flexItem.forEach((item, key) =>{
         item.addEventListener('mouseenter', () =>{
-            flexItems[key].classList.remove('flexbox-img__noActive')
+            flexItems[key].classList.add('flexbox-img__active')
+            flexItems[key].classList.remove('flexbox-img__noActive')   
         })
 
         item.addEventListener('mouseleave', () =>{
             flexItems[key].classList.add('flexbox-img__noActive')
+            flexItems[key].classList.remove('flexbox-img__active')
         })
     })    
 
