@@ -141,6 +141,10 @@ html {
   padding-bottom: 14px;
 }
 
+.services-group::after {
+  content: url("img/Separator.png");
+}
+
 .flexbox {
   display: flex;
   flex-flow: row wrap;
@@ -212,6 +216,10 @@ html {
 .portofolio__description {
   font-size: 18px;
   padding-bottom: 10px;
+}
+
+.portofolio__characteristic::after {
+  content: url("img/Separator-1.png");
 }
 
 .breadcrumbs {
@@ -360,21 +368,6 @@ html {
   margin-bottom: 90px;
 }
 
-@keyframes moveArrow {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  80% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 .slider {
   max-width: 1143px;
   height: 512px;
@@ -383,6 +376,12 @@ html {
 
 .slider__head {
   text-align: center;
+  padding-bottom: 47px;
+}
+
+.slider__head::after {
+  content: url("img/Separator-2.png");
+  margin-bottom: 47px;
 }
 
 .slider__title {
@@ -394,10 +393,6 @@ html {
 .slider__description {
   font-size: 18px;
   padding-bottom: 16px;
-}
-
-.slider__separator {
-  margin-bottom: 47px;
 }
 
 .slider__quote {
@@ -445,6 +440,10 @@ html {
   text-align: center;
   padding-top: 89px;
   padding-bottom: 69px;
+}
+
+.contact__head::after {
+  content: url("img/separator-3.png");
 }
 
 .contact__title {

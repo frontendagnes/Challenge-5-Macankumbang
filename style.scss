@@ -135,6 +135,9 @@ html {
     &__description {
         padding-bottom: 14px;
     }
+    &::after{
+        content: url('img/Separator.png');
+    }
 }
 
 .flexbox {
@@ -207,6 +210,11 @@ html {
     &__description {
         font-size: 18px;
         padding-bottom: 10px;
+    }
+    &__characteristic{
+        &::after{
+            content: url('img/Separator-1.png');
+        }
     }
 }
 
@@ -351,32 +359,17 @@ html {
 
 }
 
-@keyframes moveArrow {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-
-    80% {
-        transform: translateY(-20px);
-
-    }
-
-    100% {
-        transform: translateY(0px);
-
-    }
-}
-
 .slider {
     max-width: 1143px;
     height: 512px;
     margin: 0 auto;
     &__head{
         text-align: center;
+        padding-bottom: 47px;
+        &::after{
+            content: url('img/Separator-2.png');
+            margin-bottom: 47px;
+        }
     }
     &__title{
         font-size: 30px;
@@ -386,9 +379,6 @@ html {
     &__description{
         font-size: 18px;
         padding-bottom:16px;
-    }
-    &__separator{
-        margin-bottom: 47px;
     }
     &__quote{
         font-size: 60px;
@@ -430,6 +420,9 @@ html {
         text-align: center;
         padding-top: 89px;
         padding-bottom: 69px;
+        &::after{
+            content: url('img/separator-3.png');
+        }
     }
 
     &__title {
