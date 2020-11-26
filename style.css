@@ -230,7 +230,6 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  transition: all .75s;
 }
 
 .flexbox-img__item {
@@ -351,7 +350,7 @@ html {
 .slider {
   max-width: 1143px;
   height: 512px;
-  margin: 91px auto;
+  margin: 0 auto;
 }
 
 .slider__head {
@@ -378,7 +377,7 @@ html {
 }
 
 .slider__opinionGroup {
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   align-items: center;
 }
@@ -388,13 +387,6 @@ html {
   width: 746px;
   font-style: italic;
   line-height: 1.5;
-}
-
-.slider__opinion i {
-  position: absolute;
-  font-size: 30px;
-  margin-left: -38px;
-  margin-top: -10px;
 }
 
 .slider__costumer {

@@ -230,12 +230,12 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    transition: all .75s;
+    
     &__item {
         width: 369px;
         height: 290px;
         margin-bottom: 38px;
-        cursor: pointer; 
+        cursor: pointer;   
     }
     &__noActive{
         display: none;
@@ -249,6 +249,7 @@ html {
         padding-left: 49.5px;
         padding-right: 46.6px;
         text-align: center;
+        
         p{
             
             font-size: 24px;
@@ -351,10 +352,9 @@ html {
 }
 
 .slider {
-    // border: 2px solid black;
     max-width: 1143px;
     height: 512px;
-    margin: 91px auto;
+    margin: 0 auto;
     &__head{
         text-align: center;
     }
@@ -374,7 +374,7 @@ html {
         font-size: 60px;
     }
     &__opinionGroup{
-        display: flex;
+        display: flex !important;
         justify-content: space-around;
         align-items: center;
     }
@@ -384,12 +384,12 @@ html {
         width: 746px;
         font-style: italic;
         line-height: 1.5;
-        i{
-            position: absolute;
-            font-size: 30px;
-            margin-left:-38px;
-            margin-top: -10px;
-        }
+        // i{
+        //     position: absolute;
+        //     font-size: 30px;
+        //     margin-left:-38px;
+        //     margin-top: -10px;
+        // }
     }
     &__costumer{
         font-size: 24px;
