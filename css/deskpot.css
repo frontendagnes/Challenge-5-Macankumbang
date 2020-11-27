@@ -9,12 +9,12 @@ html {
   font-family: 'Open Sans', Tahoma, sans-serif;
 }
 
-.title {
-  font-weight: bold;
-}
-
 .height100 {
   overflow: auto !important;
+}
+
+.title {
+  font-weight: bold;
 }
 
 .btn {
@@ -48,6 +48,10 @@ html {
   position: fixed;
   top: 0;
   z-index: 999;
+}
+
+.menu__firstItem {
+  display: none;
 }
 
 .menu__sticky {
@@ -104,13 +108,10 @@ html {
   padding-bottom: 64px;
 }
 
-.head__img {
+.head__squere {
   margin-right: 91px;
   margin-top: 34px;
   margin-bottom: 44px;
-}
-
-.head__squere {
   width: 464px;
   height: 348px;
   border-radius: 10px;

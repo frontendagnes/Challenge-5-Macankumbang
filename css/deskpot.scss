@@ -8,13 +8,13 @@ html {
     scroll-behavior: smooth;
     font-family: 'Open Sans', Tahoma, sans-serif;
 }
-
-.title {
-    font-weight: bold;
-}
 .height100{
     overflow: auto !important;
 }
+.title {
+    font-weight: bold;
+}
+
 .btn {
     background-color: #EA5B58;
     color: #ffffff;
@@ -44,6 +44,10 @@ html {
     position: fixed;
     top:0;
     z-index: 999;
+    
+    &__firstItem{
+        display: none;
+      }
     &__sticky{
         transition: all .75s;
         padding-top: 5px;
@@ -51,7 +55,6 @@ html {
     }
     &__logo {
         margin-left: 114px;
-
     }
 
     &__itemGroup {
@@ -99,12 +102,10 @@ html {
         padding-bottom: 64px;
     }
 
-    &__img {
+    &__squere{
         margin-right: 91px;
         margin-top: 34px;
         margin-bottom: 44px;
-    }
-    &__squere{
         width: 464px;
         height: 348px;
         border-radius: 10px;
