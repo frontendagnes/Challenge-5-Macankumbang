@@ -26,6 +26,9 @@
             transform: scaleY(0);
             transform-origin: 50% 0;
             transition-duration: .75s;
+            background-color: #bdbdbd;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         &__item {
@@ -33,13 +36,19 @@
             background-color: #808080;
             margin-bottom: 5px;
             border-radius: 5px;
-            padding: 10px;
-            font-size: 14px;
+            font-size: 18px;
             text-align: center;
             margin-left: 0;
-
+            height: 70px;
+            width: 300px;
             &:hover {
-                background-color: #bdbdbd;
+                background-color: #a7a5a5;
+            }
+            a{
+                display: block;
+                width: 300px;
+                height: 100%;
+                padding-top: 10%;
             }
         }
 
@@ -83,9 +92,6 @@
             padding-top: 60px;
         }
 
-        &__icon {
-            width: 30%;
-        }
     }
     .flexbox{
         &__item{
@@ -93,16 +99,20 @@
         }
     }
 }
-
+@media only screen and (max-width: 777px) {
+    .flexbox{
+        &__item{
+            margin: 0;
+        }
+    }
+}
 @media only screen and (max-width: 600px) {
     .flexbox {
         &__item {
             max-width: 80%;
-            margin:0;
         }
     }
-
-    .slider {
+   .slider {
         display: none;
     }
 

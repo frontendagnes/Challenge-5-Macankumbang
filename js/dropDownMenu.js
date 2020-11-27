@@ -3,7 +3,6 @@ function dropDownMenu() {
     const menuItems = document.querySelector('.menu__itemGroup')
 
     menuBtn.addEventListener("click", () => {
-        console.log("No i jest")
         menuItems.classList.toggle("menu__activeMenu")
     })
 }
