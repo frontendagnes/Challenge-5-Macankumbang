@@ -248,24 +248,19 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    
     &__item {
         width: 369px;
         height: 290px;
         margin-bottom: 38px;
         cursor: pointer;
-    }
-    &__noActive{
-        visibility: hidden;
-        transform: scaleX(0);
-        transform-origin: 50% 0;
-        transition-duration: .75s; 
-    }
-    &__active{
-        visibility: visible;
-        transform: scaleX(1);
-        transform-origin: 50% 0;
-        transition-duration: .75s; 
+        &:hover{
+            .flexbox-img__descritpion{
+                visibility: visible;
+                transform: scaleX(1);
+                transform-origin: 50% 0;
+                transition-duration: .75s; 
+            }
+        }
     }
     &__descritpion{
         background-color: #506082;
@@ -276,7 +271,10 @@ html {
         padding-left: 49.5px;
         padding-right: 46.6px;
         text-align: center;
-        
+        visibility: hidden;
+        transform: scaleX(0);
+        transform-origin: 50% 0;
+        transition-duration: .75s; 
         p{
             
             font-size: 24px;
@@ -286,7 +284,7 @@ html {
         div{
             font-size: 14px;
             width: 272px;
-            height: 78px;
+            height: 70px;
             overflow: hidden;
         }
         i{
