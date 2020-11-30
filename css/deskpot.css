@@ -26,7 +26,7 @@ html {
   font-size: 18px;
   border-radius: 4px;
   cursor: pointer;
-  transition: all .75s;
+  transition: all 0.75s;
 }
 
 .btn:hover {
@@ -55,7 +55,7 @@ html {
 }
 
 .menu__sticky {
-  transition: all .75s;
+  transition: all 0.75s;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -78,7 +78,7 @@ html {
   color: #FFFFFF;
   font-size: 14px;
   text-decoration: none;
-  transition: all .75s;
+  transition: all 0.75s;
 }
 
 .menu__item a:hover {
@@ -233,7 +233,7 @@ html {
 
 .breadcrumbs__active {
   color: #323232;
-  transition: all .75s;
+  transition: all 0.75s;
 }
 
 .breadcrumbs__active:hover {
@@ -242,7 +242,7 @@ html {
 
 .breadcrumbs__noActive {
   color: #A7A7A7;
-  transition: all .75s;
+  transition: all 0.75s;
 }
 
 .breadcrumbs__noActive:hover {
@@ -266,7 +266,7 @@ html {
   visibility: visible;
   transform: scaleX(1);
   transform-origin: 50% 0;
-  transition-duration: .75s;
+  transition-duration: 0.75s;
 }
 
 .flexbox-img__descritpion {
@@ -281,7 +281,7 @@ html {
   visibility: hidden;
   transform: scaleX(0);
   transform-origin: 50% 0;
-  transition-duration: .75s;
+  transition-duration: 0.75s;
 }
 
 .flexbox-img__descritpion p {
@@ -302,7 +302,7 @@ html {
   color: #ffffff;
   font-size: 36px;
   margin-top: 25px;
-  transition: all .75s;
+  transition: all 0.75s;
 }
 
 .flexbox-img__descritpion i:hover {
@@ -353,7 +353,7 @@ html {
 
 .arrow-module__arrow {
   font-size: 90px;
-  transition: all .75s;
+  transition: all 0.75s;
   cursor: pointer;
 }
 
@@ -480,7 +480,7 @@ html {
 }
 
 .contact__icon i {
-  transition: all .75s;
+  transition: all 0.75s;
   cursor: pointer;
 }
 

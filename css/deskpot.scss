@@ -1,3 +1,5 @@
+@import url('./__variables.scss');
+@import url('./__mixin.scss');
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +10,11 @@ html {
     scroll-behavior: smooth;
     font-family: 'Open Sans', Tahoma, sans-serif;
 }
-.height100{
+
+.height100 {
     overflow: auto !important;
 }
+
 .title {
     font-weight: bold;
 }
@@ -24,16 +28,18 @@ html {
     font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all .75s;
+    transition: $tran-all;
 
     &:hover {
         background-color: #ff0000;
     }
 }
-.menuUp{
+
+.menuUp {
     height: 99px;
     background-color: #0d0b11;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -42,17 +48,19 @@ html {
     padding-bottom: 30px;
     background-color: #0d0b11;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 999;
-    
-    &__firstItem{
+
+    &__firstItem {
         display: none;
-      }
-    &__sticky{
-        transition: all .75s;
+    }
+
+    &__sticky {
+        transition: $tran-all;
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
     &__logo {
         margin-left: 114px;
     }
@@ -70,7 +78,7 @@ html {
             color: #FFFFFF;
             font-size: 14px;
             text-decoration: none;
-            transition: all .75s;
+            transition: $tran-all;
 
             &:hover {
                 color: #808080;
@@ -102,7 +110,7 @@ html {
         padding-bottom: 64px;
     }
 
-    &__squere{
+    &__squere {
         margin-right: 91px;
         margin-top: 34px;
         margin-bottom: 44px;
@@ -136,7 +144,8 @@ html {
     &__description {
         padding-bottom: 14px;
     }
-    &::after{
+
+    &::after {
         content: url('../img/Separator.png');
     }
 }
@@ -151,7 +160,8 @@ html {
         margin: 0 auto;
         margin-right: 77.7px;
         text-align: center;
-        i{
+
+        i {
             font-size: 48px;
             margin-bottom: 30px;
         }
@@ -185,6 +195,7 @@ html {
     padding-bottom: 150px;
     text-align: center;
     color: #ffffff;
+
     &__title {
         font-size: 48px;
         padding-bottom: 15px;
@@ -212,8 +223,9 @@ html {
         font-size: 18px;
         padding-bottom: 10px;
     }
-    &__characteristic{
-        &::after{
+
+    &__characteristic {
+        &::after {
             content: url('../img/Separator-1.png');
         }
     }
@@ -228,7 +240,7 @@ html {
 
     &__active {
         color: #323232;
-        transition: all .75s;
+        transition: $tran-all;
 
         &:hover {
             color: #A7A7A7;
@@ -237,7 +249,7 @@ html {
 
     &__noActive {
         color: #A7A7A7;
-        transition: all .75s;
+        transition: $tran-all;
 
         &:hover {
             color: #323232;
@@ -249,21 +261,21 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+
     &__item {
         width: 369px;
         height: 290px;
         margin-bottom: 38px;
         cursor: pointer;
-        &:hover{
-            .flexbox-img__descritpion{
-                visibility: visible;
-                transform: scaleX(1);
-                transform-origin: 50% 0;
-                transition-duration: .75s; 
+
+        &:hover {
+            .flexbox-img__descritpion {
+                @include rotaryStuff(visible, 1);
             }
         }
     }
-    &__descritpion{
+
+    &__descritpion {
         background-color: #506082;
         color: #ffffff;
         height: 100%;
@@ -272,64 +284,42 @@ html {
         padding-left: 49.5px;
         padding-right: 46.6px;
         text-align: center;
-        visibility: hidden;
-        transform: scaleX(0);
-        transform-origin: 50% 0;
-        transition-duration: .75s; 
-        p{
-            
+        @include rotaryStuff(hidden, 0);
+
+        p {
+
             font-size: 24px;
             font-weight: bold;
             padding-bottom: 16.5px;
         }
-        div{
+
+        div {
             font-size: 14px;
             width: 272px;
             height: 70px;
             overflow: hidden;
         }
-        i{
+
+        i {
             text-align: center;
             color: #ffffff;
             font-size: 36px;
             margin-top: 25px;
-            transition: all .75s;
-            &:hover{
+            transition: $tran-all;
+
+            &:hover {
                 color: #323232;
             }
         }
-    
+
     }
-    .item-1 {
-        background: url('../img/landscape/photo1.jpg');
-        background-size: 100% 100%;
+
+    @for $i from 1 through 6 {
+        .item-#{$i} {
+            background: url('../img/landscape/photo#{$i}.jpg');
+            background-size: 100% 100%;
         }
-
-    .item-2 {
-        background: url('../img/landscape/photo2.jpg');
-        background-size: 100% 100%;
     }
-
-    .item-3 {
-        background: url('../img/landscape/photo3.jpg');
-        background-size: 100% 100%;
-    }
-
-    .item-4 {
-        background: url('../img/landscape/photo4.jpg');
-        background-size: 100% 100%;
-    }
-
-    .item-5 {
-        background: url('../img/landscape/photo5.jpg');
-        background-size: 100% 100%;
-    }
-
-    .item-6 {
-        background: url('../img/landscape/photo6.jpg');
-        background-size: 100% 100%;
-    }
-
 }
 
 .arrow-module {
@@ -345,14 +335,16 @@ html {
 
     &__arrow {
         font-size: 90px;
-        transition: all .75s;
+        transition: $tran-all;
         cursor: pointer;
+
         &:hover {
             color: #ff0000;
             transform: translateY(20px);
         }
     }
-    i{
+
+    i {
         margin-bottom: 90px;
     }
 
@@ -362,50 +354,60 @@ html {
     max-width: 1143px;
     height: 512px;
     margin: 0 auto;
-    &__head{
+
+    &__head {
         text-align: center;
         padding-bottom: 47px;
-        &::after{
+
+        &::after {
             content: url('../img/Separator-2.png');
             margin-bottom: 47px;
         }
     }
-    &__title{
+
+    &__title {
         font-size: 30px;
         font-weight: bold;
         padding-bottom: 13px;
     }
-    &__description{
+
+    &__description {
         font-size: 18px;
-        padding-bottom:16px;
+        padding-bottom: 16px;
     }
-    &__quote{
+
+    &__quote {
         font-size: 60px;
     }
-    &__opinionGroup{
+
+    &__opinionGroup {
         display: flex !important;
         justify-content: space-around;
         align-items: center;
     }
-    &__opinion{
+
+    &__opinion {
         font-size: 18px;
         width: 746px;
         font-style: italic;
         line-height: 1.5;
-        i{
+
+        i {
             position: absolute;
             font-size: 30px;
-            margin-left:-38px;
+            margin-left: -38px;
             margin-top: -10px;
         }
     }
-    &__costumer{
+
+    &__costumer {
         font-size: 24px;
         font-weight: bold;
         padding-top: 25px;
         font-style: normal;
     }
-    &__costumerImg{
+
+    &__costumerImg {
         width: 276px;
         border-radius: 50%;
     }
@@ -419,7 +421,8 @@ html {
         text-align: center;
         padding-top: 89px;
         padding-bottom: 69px;
-        &::after{
+
+        &::after {
             content: url('../img/separator-3.png');
         }
     }
@@ -450,26 +453,31 @@ html {
     &__form {
         width: 60%;
     }
-    &__icon{
-        width:50%;
+
+    &__icon {
+        width: 50%;
         margin-top: 56px;
         font-size: 46px;
         display: flex;
         justify-content: space-between;
-        i{
-            transition: all .75s;
+
+        i {
+            transition: $tran-all;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 color: #c1bfc2;
             }
         }
     }
 }
-.adress{
-    &__title{
+
+.adress {
+    &__title {
         margin-bottom: 20px;
     }
 }
+
 adress {
     font-style: normal;
     line-height: 2;
@@ -477,7 +485,8 @@ adress {
     div {
         padding-top: 29px;
     }
-    i{
+
+    i {
         margin-right: 10px;
         color: #c0c0c0;
     }
@@ -529,7 +538,7 @@ textarea {
     }
 }
 
-.arrow-up{
+.arrow-up {
     position: fixed;
     bottom: 38px;
     right: 33px;
