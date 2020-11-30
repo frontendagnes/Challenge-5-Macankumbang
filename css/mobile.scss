@@ -1,6 +1,3 @@
-@import url('./__variables.scss');
-@import url('./__mixin.scss');
-
 @media only screen and (max-width: 1100px) {
     #textarea {
         width: 90%;
@@ -25,11 +22,10 @@
             position: absolute;
             right: -100px;
             top: 50px;
-            @include rotaryStuff(hidden, 0);
-            // visibility: hidden;
-            // transform: scaleY(0);
-            // transform-origin: 50% 0;
-            // transition-duration: .75s;
+            visibility: hidden;
+            transform: scaleY(0);
+            transform-origin: 50% 0;
+            transition: all .75s;
             background-color: #bdbdbd;
             padding: 20px;
             border-radius: 10px;
@@ -45,10 +41,12 @@
             margin-left: 0;
             height: 70px;
             width: 300px;
+
             &:hover {
                 background-color: #a7a5a5;
             }
-            a{
+
+            a {
                 display: block;
                 width: 300px;
                 height: 100%;
@@ -68,9 +66,8 @@
         }
 
         &__activeMenu {
-            @include rotaryStuff(visible, 1);
-            // visibility: visible;
-            // transform: scaleY(1);
+            visibility: visible;
+            transform: scaleY(1);
         }
     }
 
@@ -98,26 +95,30 @@
         }
 
     }
-    .flexbox{
-        &__item{
+
+    .flexbox {
+        &__item {
             max-width: 40%;
         }
     }
 }
+
 @media only screen and (max-width: 777px) {
-    .flexbox{
-        &__item{
+    .flexbox {
+        &__item {
             margin: 0;
         }
     }
 }
+
 @media only screen and (max-width: 600px) {
     .flexbox {
         &__item {
             max-width: 80%;
         }
     }
-   .slider {
+
+    .slider {
         display: none;
     }
 
@@ -136,28 +137,32 @@
     }
 }
 
-@media only screen and (max-width: 440px){
-    .head{
-        &__group{
+@media only screen and (max-width: 440px) {
+    .head {
+        &__group {
             padding-left: 20px;
-            padding-right:10px;
+            padding-right: 10px;
         }
-        &__title{
+
+        &__title {
             font-size: 24px;
             padding-bottom: 17px;
         }
-        &__description{
+
+        &__description {
             font-size: 18px;
         }
     }
-    .menu{
-        &__logo{
-            transition: $tran-all;
-            margin-left:10px;
+
+    .menu {
+        &__logo {
+            transition: .75s;
+            margin-left: 10px;
         }
     }
-    .flexbox-img{
-        &__item{
+
+    .flexbox-img {
+        &__item {
             width: 90%;
             height: auto;
         }
