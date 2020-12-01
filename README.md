@@ -1,7 +1,7 @@
 # Challenge#5
 
 Projekt pobrany z grupy na FB Weekly WebDev Challenge.
-Do wykonania projektu wykorzystałam HTML, CSS oraz JS.
+Do wykonania projektu wykorzystałam HTML, SCSS, CSS oraz JS.
 
 Ikony pobrane z https://fontawesome.com/.
 
