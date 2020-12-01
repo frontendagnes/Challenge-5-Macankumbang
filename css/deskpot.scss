@@ -1,5 +1,11 @@
-@import url('./__variables.scss');
-@import url('./__mixin.scss');
+$tran-duration: 0.75s;
+$tran-all: all 0.75s;
+@mixin rotaryStuff($visible, $scale) {
+    visibility: $visible;
+    transform: scaleX($scale);
+    transform-origin: 50% 0;
+    transition-duration: $tran-duration;
+}
 * {
     margin: 0;
     padding: 0;
@@ -173,7 +179,7 @@ html {
     }
 
     &__description {
-        height: 53.67px;
+        height: 51px;
         overflow: hidden;
         font-size: 14px;
 
@@ -296,7 +302,7 @@ html {
         div {
             font-size: 14px;
             width: 272px;
-            height: 70px;
+            height: 65px;
             overflow: hidden;
         }
 

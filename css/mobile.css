@@ -91,11 +91,27 @@
   .flexbox__item {
     max-width: 80%;
   }
-  .slider {
-    display: none;
-  }
   .contact__group {
     padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slider__opinionGroup {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .slider__opinion {
+    width: auto;
+    overflow: auto;
+    height: 95px;
+    padding: 10px;
+  }
+  .slider i {
+    display: none;
+  }
+  .contact > .information {
+    margin-top: 20px;
   }
 }
 

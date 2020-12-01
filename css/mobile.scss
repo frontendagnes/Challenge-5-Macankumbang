@@ -118,17 +118,34 @@
         }
     }
 
-    .slider {
-        display: none;
-    }
-
     .contact {
         &__group {
             padding-left: 50px;
         }
     }
 }
-
+@media only screen and (max-width: 500px){
+    .slider{
+        &__opinionGroup{
+            flex-flow: column wrap;
+            align-items: center;
+            }
+        &__opinion{
+            width: auto;
+            overflow: auto;
+            height: 95px;
+            padding: 10px;
+        }
+        i{
+            display: none;
+        }
+    }
+    .contact{
+       &>.information{
+        margin-top: 20px;
+       }
+    }
+}
 @media only screen and (max-width: 480px) {
     .head {
         &__squere {

@@ -170,7 +170,7 @@ html {
 }
 
 .flexbox__description {
-  height: 53.67px;
+  height: 51px;
   overflow: hidden;
   font-size: 14px;
 }
@@ -293,7 +293,7 @@ html {
 .flexbox-img__descritpion div {
   font-size: 14px;
   width: 272px;
-  height: 70px;
+  height: 65px;
   overflow: hidden;
 }
 

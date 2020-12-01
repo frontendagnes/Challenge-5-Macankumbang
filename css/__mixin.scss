@@ -1,6 +1,0 @@
-@mixin rotaryStuff($visible, $scale) {
-    visibility: $visible;
-    transform: scaleX($scale);
-    transform-origin: 50% 0;
-    transition-duration: $tran-duration;
-}
