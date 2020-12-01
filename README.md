@@ -10,3 +10,5 @@ Karuzela wstawiona za pomocą dodatku Slick (http://kenwheeler.github.io/slick/)
 Grafika pobrana z strony https://pixabay.com/pl/.
 
 Strona responsywna.
+## live
+ https://zabula81.github.io/Challenge-5-Macankumbang/
