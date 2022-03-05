@@ -11,4 +11,6 @@ Grafika pobrana z strony https://pixabay.com/pl/.
 
 Strona responsywna.
 ## live
- https://zabula81.github.io/Challenge-5-Macankumbang/
+ https://frontendagnes.github.io/Challenge-5-Macankumbang/
+## issues
+https://github.com/frontendagnes/Challenge-5-Macankumbang/issues
